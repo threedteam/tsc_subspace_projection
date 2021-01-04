@@ -41,6 +41,23 @@ def within_class_scatter(data,label):
         Sw = Sw + (possize/row)*S           
     return Sw
 
+def within_class_scatter_nonweight(data,label):
+    '''within class scatter matrix'''
+    labelset = set(label)
+    dim = data.shape[1]
+    row = data.shape[0]
+    Sw = np.zeros((dim,dim))
+
+    for i in labelset:
+        pos = np.where(label == i)
+        X = data[pos]
+        possize = np.size(pos)
+        mean = np.mean(X,0)
+        mean = np.array([mean])
+        S = np.dot((X-mean).T,(X-mean))
+        Sw = Sw + S           
+    return Sw
+
 def between_class_scatter(data,label):
     '''between class scatter matrix'''
     labelset = set(label)
