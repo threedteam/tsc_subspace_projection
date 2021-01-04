@@ -5,7 +5,7 @@ Code Author: Xi Chen
 Created on : 2020/12/30
 '''
 import numpy as np
-from Algorithm.core import within_class_scatter
+from Algorithm.core import within_class_scatter_nonweight
 from Algorithm.core import target_domain_scatter
 from Algorithm.core import source_domain_scatter
 from Algorithm.core import between_class_scatter
@@ -17,7 +17,7 @@ def DDRCA(Ms,Mt,batchS,batchT,Ys,alpha,lambdas,detla):
     Nt = np.size(batchT,0)
     M = np.zeros((dim, dim))
     Ss = source_domain_scatter(batchS)
-    Sw = within_class_scatter(batchS, Ys)
+    Sw = within_class_scatter_nonweight(batchS, Ys)
     St = target_domain_scatter(batchT)
     Sb = between_class_scatter(batchS,Ys)
     Ms = Ms.reshape((1, dim))  # reshape
