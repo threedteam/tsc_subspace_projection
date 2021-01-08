@@ -14,7 +14,8 @@ sklearn
 
 ### Download dataset
 
-[http://archive.ics.uci.edu/ml/datasets/Gas+Sensor+Array+Drift+Dataset+at+Different+Concentrations]()
+[http://archive.ics.uci.edu/ml/datasets/Gas+Sensor+Array+Drift+Dataset+at+Different+Concentrations]
+Please copy and paste to another URL
 
 ### Auxiliary computing function
 
