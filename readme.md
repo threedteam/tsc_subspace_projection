@@ -61,6 +61,9 @@ Subject_LDA.py
 
 Subject_PCA.py
 
+### Test
+test_Subject.py
+
 ## My Algorithm
 
 MyAlogrithm.py
