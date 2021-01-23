@@ -1,4 +1,4 @@
-# The code of proposed algorithm
+# The code of proposed algorithm MCSP
 
 ## Requirements
 
